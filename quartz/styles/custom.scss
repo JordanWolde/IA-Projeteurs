@@ -1,5 +1,11 @@
 @use "./variables.scss" as *;
 
+// Page en pleine largeur : pas de plafond centre, sinon marge blanche des deux cotes sur grand ecran
+.page {
+  max-width: 100%;
+  margin: 0;
+}
+
 // put your custom CSS here!
 
 // Menu depliant pour la colonne de gauche (explorateur, recherche, sommaire...)
