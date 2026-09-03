@@ -17,7 +17,7 @@ revu: true
 ---
 Projet de déploiement de l'IA dans l'équipe projeteur de BRLI. État des lieux honnête en **août 2026** de ce qui est réellement utilisable dans notre environnement : AutoCAD, Covadis, Revit, Allplan, QGIS (+ Civil 3D, Lumion).
 
-Voir [[Les outils IA]] pour plus de précision sur les outils envisagés et disponible à ce stade.
+Voir [[Les outils IA]] pour plus de précision sur les outils envisagés et disponibles à ce stade.
 ## Hypothèses
 
 Le projet repose sur des hypothèses non démontrées :
@@ -34,17 +34,17 @@ Licence Claude Pro côté pro activée le 29/07/2026. Le pilote phase 1 (moins d
 ## Deux présentations en septembre
 
 - **8 septembre** : présentation à l'équipe projeteurs, à titre d'info (format réunion d'équipe, 5-10 min), avec démo des projets/POC en cours.
-- **Présentation plus officielle à la direction** : certainement courant septembre également (date à préciser). Portée différente : arbitrages, budget, temps alloué, sponsor.
+- **Présentation plus officielle à la direction** : certainement plus tard (date à préciser). Portée différente : arbitrages, budget, temps alloué, sponsor.
 
 ## Ce que l'on attend de l'IA en tant que projeteurs
 
 L'idée était de réaliser un tour de table des besoins des différents projeteurs. De ceci en résulte une liste d'usages attendus clairement définis :
 
-- Supprimer les tâches répétitives à faible valeur ajoutée.
+- Réduire voir supprimer les tâches répétitives à faible valeur ajoutée.
 - Accélérer la production de livrables (mise en page automatique).
 - Vérifier nos travaux plus efficacement.
 - Correction de problèmes et support.
-- Augmenter le bien-être par la facilitation des tâches.
+- Augmenter le bien-être par la facilitation de certaines tâches.
 - Être plus réactif sur les urgences/imprévus.
 
 Les différents POC se basent sur ces besoins.
@@ -56,7 +56,7 @@ Les différents POC se basent sur ces besoins.
 - Sécuriser un cadre d'usage reproductible, indépendant d'une seule personne.
 - Limiter les craintes et inconnues.
 
-## ==Feuille de route==
+## Feuille de route
 
 Le reste ci-dessous reste à dérouler.
 
@@ -69,6 +69,12 @@ Mesurer le temps gagné, la qualité, les incidents pour livrer bilan chiffré.
 
 **Budget.**
 
+Le principal budget pour mener à bien ce projet est le temps. En effet le temps de mise en place et de test de certaines idées n'est pas nul. Mais le gain est tellement conséquent qu'il est rattrapé en prod.
+On peut estimer qu'un jour par mois est nécessaire pendant la phase 1 et 2. Puis deux à trois jour en phase d'industrialisation.
+En phase d'utilisation/maintenance, la demande intervient au cas par cas mais 3-5 jours par an sont nécessaires si de nouvelles idées arrivent ou si la mise à jour de certains process doivent être effectuées.
+
+Sinon en terme de budget matériel :
+
 | Poste                                    | Coût indicatif HT | Remarque                                                      |
 | ---------------------------------------- | ----------------- | ------------------------------------------------------------- |
 | 1 licence assistant IA (phase 1, pilote) | 180 à 340 €/an    | Selon l'outil (15 à 28 €/mois)                                |
@@ -80,7 +86,7 @@ Mesurer le temps gagné, la qualité, les incidents pour livrer bilan chiffré.
 
 ## Le corps du travail
 
-**Projet = un axe métier avec un objectif "business".** Il porte une problématique (par ex : réduire le temps de production), un périmètre, un sponsor, un budget, une roadmap.
+**Projet = un axe métier avec un objectif "business".** Il porte une problématique (par ex : réduire le temps de production).
 
 **POC = une expérimentation courte à l'intérieur.** Il teste **une** hypothèse précise, sur un périmètre réduit, avec un critère de succès chiffré et une date de fin. Un projet contient 2 à 5 POC qui s'enchaînent ou tournent en parallèle.
 
@@ -96,7 +102,7 @@ L'intérêt de ce découpage : ça transforme nos objectifs en une liste de pari
 ### Projet 2 - Production de livrables assistée
 
 - [[POC-IA7 - Comptes rendus de réunion]]
-- [[POC-IA8 - Vérification des livrables PDF (AKRIBIA)]]
+- [[POC-IA8 - Vérification des livrables PDF]]
 - POC-IA9 - Création d'agent d'automatisation de tâches répétitives (à venir)
 
 ### Projet 3 - Capitalisation de la connaissance
@@ -132,13 +138,25 @@ Les réfractaires demandent une approche à part : rien d'imposé avant que la c
 **Constat de départ, indépendant de l'IA : certains projeteurs sont déjà moins efficaces que d'autres sur des tâches comparables.** 
 L'IA amplifie cet écart plutôt qu'elle ne le corrige : les profils déjà rapides gagnent encore en vitesse en l'adoptant, les profils réfractaires ou en difficulté restent sur des méthodes 2D/3D pures et décrochent davantage. Le vrai risque à moyen terme n'est pas seulement l'adoption individuelle, c'est la formation de deux équipes dans l'équipe (2D/3D d'un côté, 2D/3D/IA de l'autre) avec un écart de productivité qui se creuse sans plan explicite pour le refermer.
 
-## ==Ce qu'on peut en retenir==
+## Ce qu'on peut en retenir
 
-- **Trois usages rentables tout de suite, pour 15 à 30 € HT/mois** : génération de scripts (Dynamo, Python, AutoLISP), analyse et rédaction documentaire (CCTP, rapports, chartes, comptes rendus), support technique de premier niveau.
-- **Les éditeurs intègrent l'IA sans surcoût.** Autodesk livre un assistant en français dans AutoCAD, Revit et Civil 3D 2027 (préversion incluse dans l'abonnement) ; Allplan 2026 embarque un assistant, un générateur de scripts (AI Coder) et un visualiseur IA. À tester dès les migrations de version.
-- **La mise en page automatique de plans n'est pas mûre.** Les rendus IA (Veras, AI Visualizer) servent en esquisse et en concertation, ils ne remplacent ni Lumion ni un plan technique.
-- **QGIS est le bon élève** : plugins IA gratuits, efficaces, exécutés en local, sans envoi de données.
-- **La sécurité des données conditionne tout le reste.** Ouvrages hydrauliques, portuaires, projets sensibles : pas d'outil grand public gratuit sur de la donnée projet, comptes entreprise avec clause de non-entraînement, et zéro cloud sur les projets sensibles (référentiel ANSSI).
+État réel au 3 septembre 2026, POC par POC (le panorama de juillet, qui tenait lieu de bilan provisoire, est maintenant remplacé par ces retours de terrain).
+
+Deux POC ont un verdict chiffré, tous les deux dans l'assistance à la production BIM :
+
+- **Génération de scripts (POC-IA1) : validée, gains réels en prod.** Quatre scripts capitalisés sur Dynamo/Python (Revit) et AutoLISP (AutoCAD/Covadis), de 4-8h à 34h économisées par projeteur et par an selon le script, fonctionnels dès le premier essai, tous utilisés en réel. Limite rencontrée : la Python API d'Allplan (PythonParts) a mis en échec le script 3DTOARCHI (l'IA évoque une limitation logicielle, sans certitude, sujet hors compétence pour trancher seul). L'usage est donc acquis sur Revit et AutoCAD/Covadis, encore incertain sur Allplan.
+- **Analyse de CCTP (POC-IA2) : GO conditionnel.** Sur les deux CCTP testés, temps divisé par 10 à 15 (objectif visé : par 2) et détection de points bloquants que l'équipe avait déjà identifiés en études, plus d'autres qu'elle n'avait pas relevés. Le frein n'est pas la fiabilité mais le coût : une session Claude entière consommée pour une seule demande sur le test le plus dense. Condition avant toute généralisation : retravailler le skill pour réduire cette consommation.
+
+Quatre POC n'ont encore aucun verdict, tous calés sur l'échéance du 8 septembre :
+
+- **Comptes rendus de réunion (POC-IA7)** : un seul essai informel à ce stade, sans anonymisation ni mesure de temps. Rien à en tirer avant d'avoir fiabilisé l'anonymisation des intervenants et chronométré 2 à 3 réunions réelles.
+- ==**Vérification des livrables PDF (POC-IA8, AKRIBIA)** : pas démarré. Reste à extraire une checklist réelle et à réunir des documents de test.==
+- ==**Assistant interne type RAG sur DATA_BRLI (POC-IA10)** : cadré, pas démarré. Deux des quatre dossiers du corpus visé (`20_NORMES`, `40_PROJETS`) sont vides, ce qui va mécaniquement pousser une partie des tests vers le repli web plutôt que vers le corpus interne.==
+- **Éditeur de modes opératoires (POC-IA12)** : outil en v0.3, opérationnel, développé de bout en bout par Claude Code sans écriture de code par le projeteur. Mais jamais testé par quelqu'un d'autre : c'est la seule chose qui manque pour juger le vrai critère de succès (adoption par un tiers), pas la faisabilité technique.
+
+**Hors périmètre du bilan métier : HYDRA-TOPOS (POC-IA5).** Projet personnel, développé hors temps et hors commande BRL, présenté comme démo mais volontairement non rattaché à la mission de référent IA.
+
+Les hypothèses sur l'IA intégrée aux éditeurs (Autodesk Assistant, Allplan 2026) et sur les plugins QGIS n'ont pas encore été testées en pratique : elles appartiennent à la phase 2 de la feuille de route (mois 3 à 6), pas encore commencée, et ne peuvent plus être comptées comme acquises tant qu'aucun POC ne les a vérifiées.
 
 ## Conclusion
 
