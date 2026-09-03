@@ -33,7 +33,7 @@ Licence Claude Pro côté pro activée le 29/07/2026. Le pilote phase 1 (moins d
 
 ## Deux présentations en septembre
 
-- **8 septembre** : présentation à l'équipe projeteurs, à titre d'info (format réunion d'équipe, 5-10 min), avec démo des projets/POC en cours.
+- **8 septembre** : présentation aux relais numériques, à titre d'info (format réunion d'équipe, 5-10 min), avec démo des projets/POC en cours.
 - **Présentation plus officielle à la direction** : certainement plus tard (date à préciser). Portée différente : arbitrages, budget, temps alloué, sponsor.
 
 ## Ce que l'on attend de l'IA en tant que projeteurs
