@@ -1,3 +1,38 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Menu depliant pour la colonne de gauche (explorateur, recherche, sommaire...)
+.sidebar.left {
+  &.left summary.sidebar-toggle,
+  summary.sidebar-toggle {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    padding: 0.25rem 0;
+    user-select: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+    }
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  @media all and ($mobile) {
+    .sidebar-content {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
