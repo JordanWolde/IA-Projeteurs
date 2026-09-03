@@ -4,6 +4,9 @@
 
 // Menu depliant pour la colonne de gauche (explorateur, recherche, sommaire...)
 .sidebar.left {
+  background-color: var(--lightgray);
+  border-right: 1px solid var(--gray);
+
   &.left summary.sidebar-toggle,
   summary.sidebar-toggle {
     display: flex;
@@ -48,17 +51,17 @@ details.sidebar.left:not([open]) {
   }
 }
 
-// Colonne droite vide (graphe/backlinks desactives) : ne prend plus de place
+// Colonne droite vide (graphe/backlinks desactives) : sert de marge miroir a gauche
 .right.sidebar:empty {
   display: none;
 }
 
 .page > #quartz-body {
   @media all and ($desktop) {
-    grid-template-columns: #{$sidePanelWidth} auto 0;
+    grid-template-columns: #{$sidePanelWidth} auto #{$sidePanelWidth};
 
     &:has(> details.sidebar.left:not([open])) {
-      grid-template-columns: 3rem auto 0;
+      grid-template-columns: 3rem auto 3rem;
     }
   }
 
