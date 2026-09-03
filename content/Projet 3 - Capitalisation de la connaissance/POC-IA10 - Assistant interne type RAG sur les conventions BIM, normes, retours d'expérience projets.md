@@ -1,6 +1,6 @@
 ---
 id: 20260824-1615
-title: POC - Assistant interne type RAG sur les conventions BIM, normes, retours d'expérience projets
+title: POC-IA10 - Assistant interne type RAG sur les conventions BIM, normes, retours d'expérience projets
 type: projet
 domain: ia
 status: stable

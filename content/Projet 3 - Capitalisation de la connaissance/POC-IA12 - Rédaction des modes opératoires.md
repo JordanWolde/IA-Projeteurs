@@ -1,6 +1,6 @@
 ---
 id: 20260811-1654
-title: POC - Rédaction des modes opératoires (HYDRA-FLOW)
+title: POC-IA12 - Rédaction des modes opératoires
 type: projet
 domain: ia
 status: stable

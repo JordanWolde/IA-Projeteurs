@@ -1,6 +1,6 @@
 ---
 id: 20260807-1620
-title: Vérification des livrables PDF
+title: POC-IA8 - Vérification des livrables PDF (AKRIBIA)
 type: projet
 domain: ia
 status: draft

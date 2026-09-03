@@ -1,6 +1,6 @@
 ---
 id: 20260729-2013
-title: POC - Génération de scripts
+title: POC-IA1 - Génération de scripts
 type: projet
 domain: ia
 status: stable

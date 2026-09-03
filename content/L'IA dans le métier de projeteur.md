@@ -1,6 +1,6 @@
 ---
 id: 20260729-2012
-title: IA Projeteur
+title: L'IA dans le métier de projeteur
 type: projet
 domain: ia
 status: stable

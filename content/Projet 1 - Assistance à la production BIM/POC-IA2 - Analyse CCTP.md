@@ -1,11 +1,11 @@
 ---
 id: 20260729-2014
-title: POC - Analyse CCTP
+title: POC-IA2 - Analyse CCTP
 type: projet
 domain: ia
 status: stable
 created: 2026-07-29
-updated: 2026-09-02
+updated: 2026-09-03
 tags:
   - projeteur
   - poc
@@ -26,9 +26,9 @@ L'IA extrait les exigences d'un CCTP plus vite et plus complète qu'une relectur
 
 ## Périmètre
 
-**Inclus.** 1 à 2 CCTP anonymisés ou non sensibles, confrontés à la liste des livrables et aux solutions techniques prises d'une affaire. Extraction des exigences documentaires : livrables attendus, formats, chartes, paramètres BIM imposés (côté projeteur).
+**Inclus :** 1 à 2 CCTP anonymisés ou non sensibles, confrontés à la liste des livrables et aux solutions techniques prises d'une affaire. Extraction des exigences documentaires : livrables attendus, formats, chartes, paramètres BIM imposés (côté projeteur).
 
-**Exclu.** Toute pièce sensible ou non anonymisée (niveaux 3-4 de la grille de sécurité des données). La vérification géométrique de maquette (cotes, superpositions, accrochages) : hors périmètre de ce POC, notée comme piste d'extension séparée ci-dessous.
+**Exclu :** Toute pièce sensible ou non anonymisée (niveaux 3-4 de la grille de sécurité des données). La vérification géométrique de maquette (cotes, superpositions, accrochages) : hors périmètre de ce POC, notée comme piste d'extension séparée ci-dessous.
 
 ## Critères de succès mesurable
 
