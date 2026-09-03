@@ -24,7 +24,7 @@ export const DefaultFrame: PageFrame = {
     return (
       <>
         <details class="left sidebar" open>
-          <summary class="sidebar-toggle">☰ Menu</summary>
+          <summary class="sidebar-toggle"><span class="icon">☰</span><span class="label">Menu</span></summary>
           <div class="sidebar-content">
             {left.map((BodyComponent) => (
               <BodyComponent {...componentData} />

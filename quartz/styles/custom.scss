@@ -6,6 +6,9 @@
 .sidebar.left {
   &.left summary.sidebar-toggle,
   summary.sidebar-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     cursor: pointer;
     font-weight: 600;
     list-style: none;
@@ -14,10 +17,6 @@
 
     &::-webkit-details-marker {
       display: none;
-    }
-
-    &::before {
-      content: "";
     }
   }
 
@@ -34,5 +33,48 @@
       align-items: center;
       flex-wrap: wrap;
     }
+  }
+}
+
+// Menu ferme : ne garde qu'un rail etroit avec l'icone, le texte disparait
+details.sidebar.left:not([open]) {
+  @media all and ($tablet), all and ($desktop) {
+    padding: $topSpacing 0.6rem 2rem 0.6rem;
+    align-items: center;
+
+    .sidebar-toggle .label {
+      display: none;
+    }
+  }
+}
+
+// Colonne droite vide (graphe/backlinks desactives) : ne prend plus de place
+.right.sidebar:empty {
+  display: none;
+}
+
+.page > #quartz-body {
+  @media all and ($desktop) {
+    grid-template-columns: #{$sidePanelWidth} auto 0;
+
+    &:has(> details.sidebar.left:not([open])) {
+      grid-template-columns: 3rem auto 0;
+    }
+  }
+
+  @media all and ($tablet) {
+    &:has(> details.sidebar.left:not([open])) {
+      grid-template-columns: 3rem auto;
+    }
+  }
+}
+
+// Titres de section soulignes, dans le style du theme Obsidian actuel
+article {
+  h2,
+  h3 {
+    font-weight: $boldWeight;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--lightgray);
   }
 }
