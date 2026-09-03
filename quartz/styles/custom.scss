@@ -51,23 +51,24 @@ details.sidebar.left:not([open]) {
   }
 }
 
-// Colonne droite vide (graphe/backlinks desactives) : sert de marge miroir a gauche
+// Colonne droite vide (graphe/backlinks desactives) : sert de marge fixe et raisonnable
 .right.sidebar:empty {
   display: none;
 }
 
 .page > #quartz-body {
+  // Pas d'espace de grille entre les colonnes : la bordure du volet fait deja la separation
+  column-gap: 0;
+
   @media all and ($desktop) {
-    grid-template-columns: #{$sidePanelWidth} auto #{$sidePanelWidth};
+    grid-template-columns: #{$sidePanelWidth} auto 3rem;
 
     &:has(> details.sidebar.left:not([open])) {
       grid-template-columns: 3rem auto 3rem;
     }
-  }
 
-  @media all and ($tablet) {
-    &:has(> details.sidebar.left:not([open])) {
-      grid-template-columns: 3rem auto;
+    & > .center {
+      padding: 0 2rem;
     }
   }
 }
