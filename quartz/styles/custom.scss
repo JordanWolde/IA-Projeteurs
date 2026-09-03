@@ -73,8 +73,9 @@ details.sidebar.left:not([open]) {
       grid-template-columns: 3rem auto 6rem;
     }
 
-    & > .center {
-      padding: 0 2rem;
+    & > .center,
+    & footer {
+      padding: 0 3.5rem;
     }
   }
 }
